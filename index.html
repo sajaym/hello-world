@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audiobook Player</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
-
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
-<h3>hello</h3>
-<a href="www.google.com">Click Here</a>
-<a> href="https://www.google.com">Also Click Here</a>
+    <div class="player-container">
+        <div class="subtitle-container"></div>
+        <audio id="audio" src=""></audio>
+        <div class="controls">
+            <button id="play-pause-btn">Play</button>
+            <input type="range" id="progress-bar" value="0">
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
